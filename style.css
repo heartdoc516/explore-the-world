@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col25 {
+    float: left;
+    width: 25%;
+}
+
+.col50 {
+    float: left;
+    width: 50%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white
+}
+
+.topnav a {
+    color: #71818c;
+    font: 600 15px/14px "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 10px 14px;
+}
+
+.topnav .title {
+    font: 600 23px/23px "Poppins", sans-serif;
+    padding: 14px 16px;
+    color: #20292f;
+    float: left;
+}
+
+.nav-links {
+    float: right;
+    padding: 14px 16px;
+}
+
+.fa-cart-shopping {
+    color: black;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+h2 {
+    font: 700 60px/78px "Oswald", sans-serif;
+    color: #333;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    background-image: url(images/cover-img.png);
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-size: cover;
+    color: white;
+}
+
+.header h1 {
+    font: 700 80px/104px "Oswald", sans-serif;
+    margin: 0;
+}
+
+.header p {
+    font: 500 20px/24px "Roboto", sans-serif;
+    max-width: 700px;
+}
+
+.header button {
+    font: 700 20px/34px "Oswald", sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 16px;
+    letter-spacing: 4px;
+    transition: all 0.3s ease-out;
+}
+
+.header button:hover {
+    background-color: white;
+    color: black;
+    mix-blend-mode: screen;
+    cursor: pointer;
+}
+
+.header .container {
+    padding: 100px 0;
+}
+
+.header img {
+    width: 100%;
+}
+
+.section-2 h2 {
+    margin-top: 0;
+}
+
+.section-2 .bloc-text {
+    padding-right: 40px;
+}
+
+.divider {
+    width: 150px;
+    height: 3px;
+    background-color: #D15C58;
+    margin: 34px 0;
+}
+
+.section-2 .row {
+    padding: 80px 0 200px 0;
+}
+
+.section-2 .bloc-text p:nth-of-type(1) {
+    font: 500 24px/34px "Roboto", sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.section-2 .bloc-text p:nth-of-type(2) {
+    font: 500 16px/30px "Roboto", sans-serif;
+    color: #666666;
+    margin-top: 60px;
+}
+
+.section-2 img {
+    width: 100%;
+}
+
+.section-2 .bloc-image {
+    padding-left: 40px;
+    padding-top: 94px;
+}
+
+.section-3 {
+    position: relative;
+    text-align: center;
+    background-color: #666666;
+    background-position-y: 67%;
+    background-size: cover;
+    background-image: url(images/background-image-section-3.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 80px;
+}
+
+.section-3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    width: 100%;
+    content: "";
+    background: linear-gradient(white, rgba(255, 255, 255, 0))
+}
+
+.section-3 button {
+    font: 700 20px/34px "Oswald", sans-serif;
+    color: #ffffff;
+    background-color: #EC443F;
+    border: none;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+    transition: all 0.2s ease-in;
+}
+
+.section-3 button:hover {
+    cursor: pointer;
+    background-color: #ec453f8f;
+    color: rgb(255, 255, 255);
+    transform: scaleX(1.1);
+}
+
+.section-4 .container {
+    padding: 50px 0;
+}
+
+.section-4 h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.section-4 .divider {
+    margin: 0 auto 40px auto;
+
+}
+
+.section-4 h4 {
+    font: 500 24px/24px "Oswald", sans-serif;
+    color: #1a1a1a;
+    margin-top: 0;
+}
+
+.section-4 p:first-of-type {
+    font: 500 16px/29px "Roboto", sans-serif;
+    color: #666666;
+    margin: 28px 0;
+}
+
+.section-4 button {
+    font: 700 20px/34px "Oswald", sans-serif;
+    color: #1a1a1a;
+    letter-spacing: 4px;
+    transition: all 0.2s;
+    border: 2px solid #1a1a1a;
+    margin-top: 24px;
+    padding: 5px 16px;
+}
+
+.section-4 button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #1a1a1a;
+}
+
+.section-4 p:nth-of-type(2),
+.section-4 p:nth-of-type(3) {
+    font: 500 16px/24px "Roboto", sans-serif;
+    color: #1a1a1a;
+}
+
+.section-4 img {
+    width: 100%;
+}
+
+.section-4 .bloc-image {
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.section-4 .bloc-text {
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.section-5 {
+    padding: 100px 20px;
+    background-color: #333;
+    background-image: url(images/bg-img-section-5.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.section-5 p:first-of-type {
+    font: 700 24px/24px "Roboto", sans-serif;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.section-5 h2 {
+    margin: 30px 0 50px 0;
+    color: white;
+}
+
+.section-5 p:last-of-type {
+    font: 500 24px/34px "Roboto", sans-serif;
+    margin: 70px auto 70px auto;
+    max-width: 770px;
+}
+
+.section-5 .divider {
+    background-color: white;
+    margin: auto;
+}
+
+.section-5 button {
+    font: 700 20px/34px "Oswald", sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 16px;
+    letter-spacing: 4px;
+    transition: all 0.3s ease-out;
+}
+
+.section-5 button:hover {
+    background-color: white;
+    color: black;
+    mix-blend-mode: screen;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 50px 0;
+}
+
+.footer h4 {
+    font: 500 24px/34px "Roboto", sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.footer li {
+    list-style-type: none;
+    font: 500 16px/30px "Roboto", sans-serif;
+    color: #666666;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer .divider {
+    margin-bottom: 70px
+}
+
+@media screen and (max-width: 1080px) {
+    .topnav .icon {
+        display: inline-block;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header .container {
+        padding: 100px 20px;
+    }
+
+    .section-4 .container {
+        padding: 50px 20px;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .nav-links {
+        padding: 0;
+        float: none;
+        display: block;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        padding: 14px 16px;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col25 {
+        width: 50%;
+    }
+
+    .col50 {
+        width: 100%;
+    }
+
+    .section-2 p {
+        margin: 60px 0;
+    }
+
+    .section-2 .bloc-text,
+    .section-2 .bloc-image,
+    .section-4 .bloc-image {
+        padding: 0;
+    }
+
+    .section-4 .bloc-text {
+        padding: 40px 40px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .divider {
+        margin: 34px auto 70px auto;
+    }
+
+    .footer .col25 {
+        min-height: 246px;
+        margin-bottom: 20px;
+    }
+}
